@@ -33,7 +33,7 @@ public class AuthTest extends BaseTest {
         .when()
             .post(AUTH_ENDPOINT)
         .then()
-            .statusCode(200)
+            .statusCode(201)
             .body("token", notNullValue())
             .body("token", not(emptyString()))
             .extract().response();

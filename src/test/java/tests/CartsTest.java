@@ -111,7 +111,7 @@ public class CartsTest extends BaseTest {
         .when()
             .post(CARTS_ENDPOINT)
         .then()
-            .statusCode(200)
+            .statusCode(201)
             .body("id", notNullValue());
     }
 

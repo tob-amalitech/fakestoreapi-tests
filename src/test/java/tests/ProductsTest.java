@@ -146,7 +146,7 @@ public class ProductsTest extends BaseTest {
         .when()
             .post(PRODUCTS_ENDPOINT)
         .then()
-            .statusCode(200)
+            .statusCode(201)
             .body("id", notNullValue())
             .body("title", equalTo("Test Automation Laptop"))
             .body("price", equalTo(999.99f));

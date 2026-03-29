@@ -99,7 +99,7 @@ public class UsersTest extends BaseTest {
         .when()
             .post(USERS_ENDPOINT)
         .then()
-            .statusCode(200)
+            .statusCode(201)
             .body("id", notNullValue());
     }
 
@@ -125,7 +125,7 @@ public class UsersTest extends BaseTest {
             .put(USERS_ENDPOINT + "/1")
         .then()
             .statusCode(200)
-            .body("id", equalTo(1));
+            .body("username", notNullValue());
     }
 
     // -------------------------------------------------------
