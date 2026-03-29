@@ -189,7 +189,7 @@ Push any commit — Jenkins should trigger automatically within seconds.
 Checkout → Build → Run Tests → Publish JUnit → Publish HTML → Archive
 ```
 
-| Stage | What it does |
+| Stage | What it will do |
 |---|---|
 | Checkout | Pulls latest code from GitHub |
 | Build | Downloads Maven dependencies |
